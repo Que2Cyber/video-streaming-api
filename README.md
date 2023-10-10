@@ -55,11 +55,11 @@ To compile and run the application using Gradle:
 The application will start on port 8080 by default.
 
 ## API Endpoints
-/api/videos/publish: POST request to publish a new video.
-/api/videos/edit/{videoId}: PUT request to edit video metadata.
-/api/videos/delist/{videoId}: DELETE request to soft delete a video.
-/api/videos/load/{videoId}: GET request to load video metadata and content.
-/api/videos/play/{videoId}: GET request to play a video.
-/api/videos/list: GET request to list all available videos.
-/api/videos/search: GET request to search for videos by criteria.
-/api/videos/engagement/{videoId}: GET request to retrieve engagement statistics for a video.
+- /api/videos/publish: POST request to publish a new video.
+- /api/videos/edit/{videoId}: PUT request to edit video metadata.
+- /api/videos/delist/{videoId}: DELETE request to soft delete a video.
+- /api/videos/load/{videoId}: GET request to load video metadata and content.
+- /api/videos/play/{videoId}: GET request to play a video.
+- /api/videos/list: GET request to list all available videos.
+- /api/videos/search: GET request to search for videos by criteria.
+- /api/videos/engagement/{videoId}: GET request to retrieve engagement statistics for a video.
