@@ -11,8 +11,6 @@ This Java backend application provides an API for a video streaming platform. It
 - [Testing](#testing)
 - [Documentation](#documentation)
 - [Assumptions](#assumptions)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Requirements
 - Java Development Kit (JDK) 17 or higher
@@ -63,3 +61,32 @@ The application will start on port 8080 by default.
 - /api/videos/list: GET request to list all available videos.
 - /api/videos/search: GET request to search for videos by criteria.
 - /api/videos/engagement/{videoId}: GET request to retrieve engagement statistics for a video.
+
+## Testing
+We use JUnit and Mockito for unit testing and H2 (in-memory database) for database integration testing. To run the tests:
+
+- For unit tests:
+mvn test
+- For integration tests:
+  mvn test -P integration-tests
+
+## Assumptions
+To provide context and clarify certain aspects of this project, I have made the following assumptions during development:
+
+1. Authentication and Authorization: I assumed that authentication and authorization mechanisms are handled by an external system (e.g., OAuth or Single Sign-On). The API endpoints do not include authentication and authorization logic. Please integrate the appropriate security measures as needed.
+
+2. Database Choice: I assumed that you have configured an appropriate database for the application, such as H2, MySQL, or another compatible database system. The application's database schema will be automatically updated if using H2 with the provided configuration.
+
+3. Deployment Environment: I assumed that you will deploy this application in a suitable environment for a production-ready solution. Make sure to consider factors like server resources, load balancing, and scalability.
+
+4. Error Handling: While I have implemented basic error handling, I assumed that it will be extended according to specific error reporting and logging requirements.
+
+5. User Interface (UI): This project focuses on the backend API. I assume that a separate frontend application will interact with this API to provide a user interface for content managers and users.
+
+6. Performance Testing: Performance testing and optimization are beyond the scope of this project. I recommend conducting thorough performance tests in a production environment to ensure the system meets  performance requirements.
+
+7. Data Volume: This application is designed for moderate data volumes. If you expect high data volumes, consider additional optimizations and database scaling.
+
+8. Data Security: Data encryption and security measures are not explicitly addressed in this project's scope. One should implement encryption and security protocols appropriate for their use case.
+
+9. Monitoring and Alerting: I assumed there is a monitoring and alerting system in place to detect and respond to issues in a production environment.
