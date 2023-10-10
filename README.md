@@ -9,7 +9,6 @@ This Java backend application provides an API for a video streaming platform. It
 - [Building and Running](#building-and-running)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
-- [Documentation](#documentation)
 - [Assumptions](#assumptions)
 
 ## Requirements
